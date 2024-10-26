@@ -19,7 +19,7 @@ python -m venv ai_book_venv
 
 3. **Activate the virtual environment and initialise environment variables**:
 
-   - On macOS/Linux:
+   - On a macOS:
      ```bash
      source ai_book_venv/bin/activate && source .env
      ```
