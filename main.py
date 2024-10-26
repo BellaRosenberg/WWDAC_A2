@@ -1,6 +1,8 @@
 import requests
 import os
 import anthropic
+from dotenv import load_dotenv
+
 def greeting():
     # print text to format and greet the user
     print("\n" + "+++" * 10 + "\n")
@@ -125,8 +127,8 @@ def get_claude_recommendations(api_key, prompt):
 
 
 def main():
-    anthropic_api_key="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"
 
+    anthropic_api_key=os.getenv("ANTHROPIC_API_KEY")
     # greet the user
     greeting()
     # gather how many books user wants to input
@@ -146,6 +148,8 @@ def main():
 
 
     return
+
+load_dotenv()
 
 if __name__=="__main__":
 
