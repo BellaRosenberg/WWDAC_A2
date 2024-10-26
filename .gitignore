@@ -1,2 +1,3 @@
 /ai_book_venv/*
 /ai_book_venv
+.env
