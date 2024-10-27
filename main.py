@@ -91,7 +91,7 @@ def get_books_details(book_titles):
     
     return books_details
 
-# function to format the data from Open Library into a better format for the prompt
+# function to format the data from Google Books into a better format for the prompt
 def format_book_details_for_prompt(book_details_list):
     return "\n".join([
         f"Title: {book['title']}\nAuthor: {book['author']}\nGenres: {', '.join(book['genres'])}\n"
