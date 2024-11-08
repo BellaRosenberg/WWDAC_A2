@@ -98,7 +98,7 @@ def format_book_details_for_prompt(book_details_list):
         for book in book_details_list
     ])
 
-# # function to generate prompt for claude
+# function to generate prompt for claude
 def generate_prompt(fav_details):
     prompt_begin = "Please produce book recommendations based on the following data:"
 
@@ -142,7 +142,7 @@ def main():
     # now pass the information into the anthropic API
     reco = get_claude_recommendations(api_key=anthropic_api_key, prompt=prompt)
      
-    
+    # output each bit of data seperatley 
     for chunk in reco:
         print(chunk.text)
 
