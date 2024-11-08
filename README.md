@@ -23,11 +23,11 @@ git clone https://github.com/BellaRosenberg/WWDAC_A2.git
 python -m venv ai_book_venv
 ```
 
-3. **Activate the virtual environment and initialise environment variables**:
+3. **Activate the virtual environment**
 
    - On a macOS:
      ```bash
-     source ai_book_venv/bin/activate && source .env
+     source ai_book_venv/bin/activate
      ```
 
 4. **Install the required dependencies**:
@@ -40,11 +40,16 @@ pip install -r requirements.txt
    - Sign up for the **Google Books API** 
    - Obtain an API key from **Anthropic Claude** 
 
-6. **Create a `.env` file** in the root of your project folder and store your API keys like this:
+6. **Create a `.env` file** in the root of your project folder and store your API keys like this (sorry you'll need to create your own API keys):
 
 ```
 GOOGLE_BOOKS_API_KEY=your-google-books-api-key
 ANTHROPIC_API_KEY=your-anthropic-api-key
+```
+
+Then initialise environment variables: 
+```
+source .env
 ```
 
 7. **Run the project**:
