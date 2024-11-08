@@ -4,10 +4,7 @@
 This project is an AI book recommender that provides users with personalised book recommendations based on their preferences. Users simply enter the quantity and title of their favourite books, and are provided with detailed suggestions! 
 
 ## Technology Used 
-**Google Books API**
-Used to retrieve book data 
-**Anthropic Claude API**
-Used to generate recommendations
+**Google Books API** was used to retrieve book data, and **Anthropic Claude API** was used to generate recommendations
 
 ## Project Status
 **Complete**
